@@ -1,0 +1,98 @@
+h2 {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+}
+
+#grid {
+    margin: 40px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.squares {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+}
+
+.squares:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* rgb(130, 130, 130) */
+}
+
+.squares p {
+    margin: auto;
+    font-size: 4rem; /* 7rem */
+    color: rgb(255, 255, 255);
+}
+
+#square_0, #square_1, #square_2, #square_3, #square_4, #square_5 {
+    border-bottom: 4px solid white;
+}
+
+#square_3, #square_4, #square_5, #square_6, #square_7, #square_8 {
+    border-top: 4px solid white;
+}
+
+#square_0, #square_3, #square_6, #square_1, #square_4, #square_7 {
+    border-right: 4px solid white;
+}
+
+#square_1, #square_4, #square_7, #square_2, #square_5, #square_8 {
+    border-left: 4px solid white;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .squares {
+        width: 80px;
+        height: 80px;
+        /*border: 3px solid black;*/
+    }
+
+    .squares p {
+        font-size: 3rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    .squares {
+        width: 200px;
+        height: 200px;
+    }
+
+    .squares p {
+        font-size: 7rem;
+    }
+
+    #square_0, #square_1, #square_2, #square_3, #square_4, #square_5 {
+        border-bottom: 7px solid white;
+    }
+    
+    #square_3, #square_4, #square_5, #square_6, #square_7, #square_8 {
+        border-top: 7px solid white;
+    }
+    
+    #square_0, #square_3, #square_6, #square_1, #square_4, #square_7 {
+        border-right: 7px solid white;
+    }
+    
+    #square_1, #square_4, #square_7, #square_2, #square_5, #square_8 {
+        border-left: 7px solid white;
+    }
+    
+}
