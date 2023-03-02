@@ -1,6 +1,5 @@
 import {newGame, makeMove, resetGame} from "./game.js";
 
-/*  CREATE AND REMOVE HTML DOM ELEMENTS  */
 function createMenu() {
     let menu = document.createElement("div");
     menu.id = "menu";
@@ -116,7 +115,7 @@ function createGameGrid() {
     button.addEventListener("click", resetGame)
 }
 
-/*  RENDERS PAGE  */
+/*  INITIATE  */
 createMenu();
 
-//TODO: mobiilinäkymä
+//TODO: mobile view

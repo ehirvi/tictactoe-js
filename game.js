@@ -1,4 +1,3 @@
-/*  FUNCTIONS OF THE GAME  */
 function newGame() {
     GAME_GRID = [null, null, null, null, null, null, null, null, null];
     //playerTurn = GAME_PAWNS[Math.round(Math.random())];
@@ -78,7 +77,7 @@ function checkGameStatus(player){
     }
 }
 
-/*  DEFINE GLOBAL VARIABLES  */
+/*  GLOBAL VARIABLES  */
 let playerTurn;
 let gameEnded = true;
 let gameTurns = 0;
